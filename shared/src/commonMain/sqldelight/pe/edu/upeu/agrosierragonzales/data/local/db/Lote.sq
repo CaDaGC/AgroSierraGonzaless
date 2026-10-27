@@ -1,0 +1,4 @@
+CREATE TABLE lote(id INTEGER NOT NULL PRIMARY KEY,codigo TEXT NOT NULL,nombre TEXT NOT NULL,hectareas REAL NOT NULL,cultivo TEXT NOT NULL,valle TEXT NOT NULL,campaniaCerrada INTEGER NOT NULL,dosisMaximaPorHectarea REAL NOT NULL,ultimaActualizacion TEXT NOT NULL);
+selectAll: SELECT * FROM lote ORDER BY nombre COLLATE NOCASE;
+replaceAll: INSERT OR REPLACE INTO lote VALUES(?,?,?,?,?,?,?,?,?);
+
